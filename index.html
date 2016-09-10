@@ -1,189 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/reset.css">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-   <header>
-      <div class="wrapper">
-      <div class="phone">
-         <img class="number" src="img/call-icon.png" alt="">
-         <div class="number">(044)123-45-67</div>
-         <div class="number">(044)567-89-10</div>
-      </div>
-      <div class="login">
-         <div class="login-icon"></div>
-         <input type="text" placeholder="логин">
-         <input type="password" placeholder="пароль">
-         <a href="#" class="login-link">вход</a>
-         <div class="line"></div>
-         <a href="#" class="login-link">регистрация</a>
-         <a href="#" class="login-link">забыли пароль?</a>
-      </div>
-      <div class="nav">
-         <a href="#" class="link"><img src="img/home.png" alt="" class="nav-icon"></a>
-         <a href="#" class="link"><img src="img/mape-site.png" alt="" class="nav-icon"></a>
-         <a href="#" class="link"><img src="img/email.png" alt="" class="nav-icon"></a>
-      </div>
-      </div>
+    <header>
+        <div class="wrapper-content top-line">
+            <section class="phone">
+                <a href="#" class="phone__icon"></a>
+                <span class="phone__number">(044)123-45-67</span>
+                <span class="phone__number">(044)567-89-10</span>
+            </section>
 
-      <img src="img/main-img.png" alt="" class="main-img">
-   </header>
+            <section class="avtoriz">
+                <div class="avtoriz__icon"></div>
+                <input type="text" placeholder="логин">
+                <input type="password" placeholder="пароль">
+                <a href="#" class="login">вход</a>
+                <div class="line"></div>
+                <a href="#" class="signup">регистрация</a>
+                <a href="#" class="forgot">забыли пароль?</a>
+            </section>
 
-   <nav>
-      <ul class="main-nav">
-         <li class="nav-item"><a href="#" class="nav-link">о компани</a></li>
-         <li class="nav-item"><a href="#" class="nav-link">оплата</a></li>
-         <li class="nav-item"><a href="#" class="nav-link">доставка</a></li>
-         <li class="nav-item"><a href="#" class="nav-link">статьи</a></li>
-         <li class="nav-item"><a href="#" class="nav-link">контакты</a></li>
-      </ul>
-      <div class="info">
-         <img src="img/basket-icon.png" alt="" class="basket">
-         <span class="goods">товаров:</span>
-         <span class="goods quantity">0</span>
-         <span class="goods">на сумму:</span>
-         <span class="goods sum">0,00 грн</span>
-      </div>
-   </nav>
+            <ul class="navi">
+                <li class="navi__item"><a href="#" class="navi__link"></a></li>
+                <li class="navi__item"><a href="#" class="navi__link"></a></li>
+                <li class="navi__item"><a href="#" class="navi__link"></a></li>
+            </ul>
+        </div>
 
-   <div class="search"></div>
+        <div class="wrapper-content main-img"></div>
 
-   <main>
-      <aside class="left">
-         <div class="catalog">каталог продукции:</div>
-         <div class="catalog-label">шины</div>
-         <ul class="shiny">
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 1</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 2</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 3</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 4</a></li>
-         </ul>
+        <div class="wrapper-content menu-line">
+            <ul class="menu">
+               <li class="menu__item"><a href="#" class="menu__link">о компани</a></li>
+               <li class="menu__item"><a href="#" class="menu__link">оплата</a></li>
+               <li class="menu__item"><a href="#" class="menu__link">доставка</a></li>
+               <li class="menu__item"><a href="#" class="menu__link">статьи</a></li>
+               <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+            </ul>
 
-         <div class="catalog-label">диски</div>
-         <ul class="disk shiny">
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 1</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 2</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 3</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 4</a></li>
-         </ul>
+            <div class="basket">
+                <a href="#" class="basket__icon"></a>
+                <span class="basket__title">товаров:</span>
+                <span class="basket__quantity">0</span>
+                <span class="basket__title">на сумму:</span>
+                <span class="basket__count">0,00</span>
+            </div>
 
-         <div class="catalog-label catalog-label-bolt">болты</div>
-         <ul class="bolt shiny">
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 1</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 2</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 3</a></li>
-            <li class="catalog-item"><a href="#" class="catalog-link">Наименование 4</a></li>
-         </ul>
-      </aside>
+        </div>
 
-      <section class="content">
-         <figure class="tovar col-1 tr-1">
-            <figcaption class="brend">goodyear</figcaption>
-            <figcaption class="model">Ultra Grip Extreme</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">90.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-2 tr-1">
-            <figcaption class="brend">Nokian</figcaption>
-            <figcaption class="model">Hakkapelitta R</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">115.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-3 tr-1">
-            <figcaption class="brend">Hankook</figcaption>
-            <figcaption class="model">K 708 155/65 R14</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">393.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-1 tr-2">
-            <figcaption class="brend">goodyear</figcaption>
-            <figcaption class="model">Ultra Grip Extreme</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">90.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-2 tr-2">
-            <figcaption class="brend">Nokian</figcaption>
-            <figcaption class="model">Hakkapelitta R</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">115.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-3 tr-2">
-            <figcaption class="brend">Hankook</figcaption>
-            <figcaption class="model">K 708 155/65 R14</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">393.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-1 tr-3">
-            <figcaption class="brend">goodyear</figcaption>
-            <figcaption class="model">Ultra Grip Extreme</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">90.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-2 tr-3">
-            <figcaption class="brend">Nokian</figcaption>
-            <figcaption class="model">Hakkapelitta R</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">115.00 грн.</figcaption>
-         </figure>
-         <figure class="tovar col-3 tr-3">
-            <figcaption class="brend">Hankook</figcaption>
-            <figcaption class="model">K 708 155/65 R14</figcaption>
-            <div class="background-tovar"><img src="img/goods.png" alt=""></div>
-            <figcaption class="cost">393.00 грн.</figcaption>
-         </figure>
-      </section>
+        <div class="wrapper-content find-line">
+            <div class="find-po-avto"></div>
+            <div class="find-tires"></div>
+            <div class="find-disc"></div>
+        </div>
 
-      <aside class="right">
-         <div class="catalog">бренды:</div>
-         <div class="catalog-label">шины</div>
-         <ul class="brend-shiny">
-            <li class="brend-item"><input type="checkbox" id="brend 1"><label for="brend 1">бренд 1</label></li>
-            <li class="brend-item"><input type="checkbox" id="brend 2"><label for="brend 2">бренд 2</label></li>
-            <li class="brend-item"><input type="checkbox" id="brend 3"><label for="brend 3">бренд 3</label></li>
-         </ul>
+    </header>
 
-         <div class="catalog-label brend-disk">диски</div>
-         <ul class="brend-shiny">
-            <li class="brend-item"><input type="checkbox" id="brend 4"><label for="brend 4">бренд 1</label></li>
-            <li class="brend-item"><input type="checkbox" id="brend 5"><label for="brend 5">бренд 2</label></li>
-            <li class="brend-item"><input type="checkbox" id="brend 6"><label for="brend 6">бренд 3</label></li>
-         </ul>
-         <button type="button" name="button">выбрать</button>
-      </aside>
-   </main>
+    <main class="wrapper-content">
 
-   <footer>
-      <div class="brendlogo">
-         <img src="img/brend-logo/brend-logo-1.png" alt="">
-         <img src="img/brend-logo/brend-logo-2.png" alt="">
-         <img src="img/brend-logo/brend-logo-3.png" alt="">
-         <img src="img/brend-logo/brend-logo-4.png" alt="">
-         <img src="img/brend-logo/brend-logo-5.png" alt="">
-         <img src="img/brend-logo/brend-logo-6.png" alt="">
-         <img src="img/brend-logo/brend-logo-7.png" alt="">
-         <img src="img/brend-logo/brend-logo-8.png" alt="">
-      </div>
-      <div class="footer-bc">
-      <ul class="footer-menu">
-         <li class="footer-menu-item"><a href="#" class="footer-menu-link">О компании</a></li>
-         <li class="footer-menu-item"><a href="#" class="footer-menu-link">Доставка</a></li>
-         <li class="footer-menu-item"><a href="#" class="footer-menu-link">Статьи</a></li>
-         <li class="footer-menu-item"><a href="#" class="footer-menu-link">Контакты</a></li>
-      </ul>
-      <div class="footer-line"></div>
-      <div class="footer-line"></div>
-      <div class="footer-line"></div>
-      <span>Создание сайта &#169; Global Vision</span>
-      </div>
-   </footer>
+        <aside class="left">
+           <div class="catalog catalog__goods">каталог продукции:</div>
+           <div class="catalog catalog__label">шины</div>
+           <ul class="shiny">
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 1</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 2</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 3</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 4</a></li>
+           </ul>
 
+           <div class="catalog catalog__label catalog__label__disk">диски</div>
+           <ul class="shiny disk">
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 1</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 2</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 3</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 4</a></li>
+           </ul>
 
+           <div class="catalog catalog__label catalog__label__bolt">болты</div>
+           <ul class="shiny bolt">
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 1</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 2</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 3</a></li>
+              <li class="catalog__item"><a href="#" class="catalog__link">Наименование 4</a></li>
+           </ul>
+        </aside>
 
+        <section class="content">
+                <div class="gradient-container">
+                   <figure class="tovar col-1 tr-1">
+                      <figcaption class="brend">goodyear</figcaption>
+                      <figcaption class="model">Ultra Grip Extreme</figcaption>
+                      <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                      <figcaption class="cost">90.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-2 tr-1">
+                        <figcaption class="brend">Nokian</figcaption>
+                        <figcaption class="model">Hakkapelitta R</figcaption>
+                        <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                        <figcaption class="cost">115.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-3 tr-1">
+                        <figcaption class="brend">Hankook</figcaption>
+                        <figcaption class="model">K 708 155/65 R14</figcaption>
+                        <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                        <figcaption class="cost">393.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-1 tr-2">
+                        <figcaption class="brend">goodyear</figcaption>
+                        <figcaption class="model">Ultra Grip Extreme</figcaption>
+                        <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                        <figcaption class="cost">90.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-2 tr-2">
+                         <figcaption class="brend">Nokian</figcaption>
+                         <figcaption class="model">Hakkapelitta R</figcaption>
+                         <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                         <figcaption class="cost">115.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-3 tr-2">
+                        <figcaption class="brend">Hankook</figcaption>
+                        <figcaption class="model">K 708 155/65 R14</figcaption>
+                        <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                        <figcaption class="cost">393.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-1 tr-3">
+                        <figcaption class="brend">goodyear</figcaption>
+                        <figcaption class="model">Ultra Grip Extreme</figcaption>
+                        <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                        <figcaption class="cost">90.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-2 tr-3">
+                        <figcaption class="brend">Nokian</figcaption>
+                        <figcaption class="model">Hakkapelitta R</figcaption>
+                        <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                        <figcaption class="cost">115.00</figcaption>
+                   </figure>
+                   <figure class="tovar col-3 tr-3">
+                        <figcaption class="brend">Hankook</figcaption>
+                        <figcaption class="model">K 708 155/65 R14</figcaption>
+                        <div class="background-tovar"><img src="img/goods.png" alt=""></div>
+                        <figcaption class="cost">393.00</figcaption>
+                   </figure>
+               </div>
+        </section>
+
+        <aside class="right">
+           <div class="catalog catalog__goods">бренды:</div>
+           <div class="catalog catalog__label">шины</div>
+           <ul class="brend__shiny">
+              <li class="brend__item"><input type="checkbox" id="brend 1"><label for="brend 1">бренд 1</label></li>
+              <li class="brend__item"><input type="checkbox" id="brend 2"><label for="brend 2">бренд 2</label></li>
+              <li class="brend__item"><input type="checkbox" id="brend 3"><label for="brend 3">бренд 3</label></li>
+           </ul>
+
+           <div class="catalog catalog__label brend____label__disk">диски</div>
+           <ul class="brend__shiny brend__disk">
+              <li class="brend__item"><input type="checkbox" id="brend 4"><label for="brend 4">бренд 1</label></li>
+              <li class="brend__item"><input type="checkbox" id="brend 5"><label for="brend 5">бренд 2</label></li>
+              <li class="brend__item"><input type="checkbox" id="brend 6"><label for="brend 6">бренд 3</label></li>
+           </ul>
+           <button type="button" name="button">выбрать</button>
+        </aside>
+
+    </main>
+    <footer>
+        <div class="wrapper-content brend-logo__line">
+            <a href="#" class="brend-logo__link"></a>
+            <a href="#" class="brend-logo__link"></a>
+            <a href="#" class="brend-logo__link"></a>
+            <a href="#" class="brend-logo__link"></a>
+            <a href="#" class="brend-logo__link"></a>
+            <a href="#" class="brend-logo__link"></a>
+            <a href="#" class="brend-logo__link"></a>
+            <a href="#" class="brend-logo__link"></a>
+        </div>
+        <div class="wrapper-content footer-menu-line">
+            <ul class="menu">
+               <li class="menu__item"><a href="#" class="menu__link">о компани</a></li>
+               <li class="menu__item"><a href="#" class="menu__link">доставка</a></li>
+               <li class="menu__item"><a href="#" class="menu__link">статьи</a></li>
+               <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+            </ul>
+            <span class="footer-copy">Создание сайта &#169; Global Vision</span>
+        </div>
+    </footer>
 </body>
 </html>
